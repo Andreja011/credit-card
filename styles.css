@@ -66,6 +66,10 @@ HELPER CLASSES
   font-family: sans-serif;
 }
 
+.transition {
+  transition: all 0.5s;
+}
+
 /* ======
 STYLES
 ====== */
@@ -117,7 +121,6 @@ body::before {
   font-family: monospace;
   top: 30px;
   right: 30px;
-  transition: all 0.5s;
 }
 
 .credit-card-chip {
@@ -134,13 +137,13 @@ body::before {
   font-size: 3.6rem;
   bottom: 100px;
   left: 40px;
-  transition: all 0.5s;
 }
 
 .credit-card-number:hover,
 .credit-card-holder:hover,
 .credit-card-expiry-date:hover,
-.credit-card-name:hover {
+.credit-card-name:hover,
+footer > p:hover {
   text-shadow: 0 0 10px #fff, 0 0 40px #fff;
 }
 
@@ -148,7 +151,6 @@ body::before {
   font-size: 1.4rem;
   bottom: 30px;
   left: 30px;
-  transition: all 0.5s;
 }
 
 span {
@@ -159,7 +161,6 @@ span {
   font-size: 1.4rem;
   bottom: 30px;
   left: 230px;
-  transition: all 0.5s;
 }
 
 .credit-card-logo {
@@ -180,14 +181,6 @@ footer {
   gap: 1rem;
 }
 
-footer > p {
-  transition: all 0.5s;
-}
-
-footer > p:hover {
-  text-shadow: 0 0 10px #fff, 0 0 40px #fff;
-}
-
 a {
   color: #fff;
   display: flex;
@@ -197,7 +190,6 @@ a {
 
 .logo-github {
   font-size: 2.4rem;
-  transition: transform 0.3s ease-in-out;
 }
 
 .logo-github:hover {
