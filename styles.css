@@ -30,6 +30,10 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ==============
 HELPER CLASSES
 ============== */
@@ -161,4 +165,41 @@ span {
 .credit-card-logo {
   right: 30px;
   bottom: 30px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 2rem;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer > p {
+  transition: all 0.5s;
+}
+
+footer > p:hover {
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff;
+}
+
+a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-github {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
