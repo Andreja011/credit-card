@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'OCR';
+  src: url(fonts/OCR\ A\ Extended\ Regular.ttf);
+}
+
+/* =========
+VARIABLES
+========= */
+
+:root {
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --color-purple: #23074d;
+  --color-orange: #ff4c1c;
+  --icons-width: 5rem;
+  --logo-width: 7rem;
+  --border: 1px solid #eeeded70;
+}
+
+/* ============
+GLOBAL RESET
+============ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ==============
+HELPER CLASSES
+============== */
+
+.absolute {
+  position: absolute;
+}
+
+.icons {
+  width: var(--icons-width);
+}
+
+.logo {
+  width: var(--logo-width);
+}
+
+.normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+/* ======
+STYLES
+====== */
+
+body {
+  font-family: 'OCR', sans-serif;
+  line-height: 1;
+  /* font-weight: var(--font-weight-normal); */
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    var(--color-purple),
+    var(--color-orange)
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-purple);
+  clip-path: circle(40% at 90% 50%);
+}
+
+.credit-card {
+  width: 50rem;
+  height: 30rem;
+  background: radial-gradient(
+    140% 140% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-top: var(--border);
+  border-left: var(--border);
+  border-radius: 30px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.credit-card-name {
+  font-size: 2.8rem;
+  font-family: monospace;
+  top: 30px;
+  right: 30px;
+}
+
+.credit-card-chip {
+  top: 100px;
+  left: 40px;
+}
+
+.credit-card-nfc {
+  top: 100px;
+  left: 100px;
+}
+
+.credit-card-number {
+  font-size: 3.6rem;
+  bottom: 100px;
+  left: 40px;
+}
+
+.credit-card-holder {
+  font-size: 1.4rem;
+  bottom: 30px;
+  left: 30px;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.credit-card-expiry-date {
+  font-size: 1.4rem;
+  bottom: 30px;
+  left: 230px;
+}
+
+.credit-card-logo {
+  right: 30px;
+  bottom: 30px;
+}
