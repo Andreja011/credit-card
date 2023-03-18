@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'OCR';
+  font-family: "OCR";
   src: url(fonts/OCR\ A\ Extended\ Regular.ttf);
 }
 
@@ -14,7 +14,6 @@ VARIABLES
   --color-orange: #ff4c1c;
   --icons-width: 5rem;
   --logo-width: 7rem;
-  --border: 1px solid #eeeded70;
 }
 
 /* ============
@@ -68,7 +67,7 @@ STYLES
 ====== */
 
 body {
-  font-family: 'OCR', sans-serif;
+  font-family: "OCR", sans-serif;
   line-height: 1;
   /* font-weight: var(--font-weight-normal); */
   color: #fff;
@@ -79,14 +78,13 @@ body {
     var(--color-purple),
     var(--color-orange)
   );
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 body::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -104,11 +102,9 @@ body::before {
     rgba(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  border-top: var(--border);
-  border-left: var(--border);
+  box-shadow: 0 0 10px #fff;
   border-radius: 30px;
   backdrop-filter: blur(30px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -117,6 +113,7 @@ body::before {
   font-family: monospace;
   top: 30px;
   right: 30px;
+  transition: all 0.5s;
 }
 
 .credit-card-chip {
@@ -133,12 +130,21 @@ body::before {
   font-size: 3.6rem;
   bottom: 100px;
   left: 40px;
+  transition: all 0.5s;
+}
+
+.credit-card-number:hover,
+.credit-card-holder:hover,
+.credit-card-expiry-date:hover,
+.credit-card-name:hover {
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff;
 }
 
 .credit-card-holder {
   font-size: 1.4rem;
   bottom: 30px;
   left: 30px;
+  transition: all 0.5s;
 }
 
 span {
@@ -149,6 +155,7 @@ span {
   font-size: 1.4rem;
   bottom: 30px;
   left: 230px;
+  transition: all 0.5s;
 }
 
 .credit-card-logo {
